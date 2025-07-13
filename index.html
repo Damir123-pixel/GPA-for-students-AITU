@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GPA calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p>
+    <br><br><strong>GPA калькулятор для студентов Astana IT University</strong> <br><br><br><br>
+  </p>
+
+  <img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2025-07-13 151603.png" height="70px" width="200px"><br>
+  <img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2025-07-13 143958.png" height="300px" width="700px"><br>
+
+  <div class="calculator">
+    <h2>Введите данные по предметам</h2>
+
+    <div id="subjects">
+      <div class="input-row">
+        
+        <select class="grade">
+          <option value="4">A</option>
+          <option value="3.67">A-</option>
+          <option value="3.33">B+</option>
+          <option value="3">B</option>
+          <option value="2.67">B-</option>
+          <option value="2.33">C+</option>
+          <option value="2">C</option>
+          <option value="1.67">C-</option>
+          <option value="1.33">D+</option>
+          <option value="1">D</option>
+          <option value="0">F</option>
+        </select>
+        <input type="number" placeholder="Кредиты" class="credit">
+      </div>
+    </div>
+
+    <button onclick="addRow()">Добавить предмет</button>
+    <button onclick="calculateGPA()">Рассчитать GPA</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>

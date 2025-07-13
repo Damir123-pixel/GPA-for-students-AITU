@@ -1,0 +1,102 @@
+body {
+  background-image: url(../../Downloads/20250311143146369_big.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* ключевой эффект! */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.calculator {
+  background-color: #ffffffcc;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-row input,
+.input-row select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0055a5;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #003f7f;
+  transform: scale(1.05); /* кнопка немного увеличивается */
+}
+
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+}
+
